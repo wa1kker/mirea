@@ -12,7 +12,7 @@
             background-color: #333;
         }
         header {
-            background-color: #9400D3;
+            background-color: #3a7069;
             color: white;
             padding: 10px 20px;
             display: flex;
@@ -20,11 +20,13 @@
             align-items: center;
         }
         a:visited {
-            color:#fff;
+            color: #fff;
         }
         nav {
             display: flex;
             gap: 15px;
+            padding: 10px 20px;
+            background-color: #3a7069;
         }
         .container {
             display: flex;
@@ -48,20 +50,21 @@
             margin-bottom: 20px;
         }
         .service-box {
-            width: 30%;
+            flex: 1; /* Устанавливаем flex-grow, чтобы делать все блоки одинаковой ширины */
             height: 150px;
-            background-color: #eaeaea;
+            background-color: #e2e7e7;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 5px;
-            border: 1px solid #9400D3;
+            margin: 0 10px; /* Увеличиваем отступы между блоками */
+            border: 1px solid #e2e7e7;
+            border-radius: 5px; /* Закругляем углы для большей эстетики */
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #030303;
-            color: rgb(0, 0, 0)55, 255, 255);
+            background-color: #3a7069;
+            color: white;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -79,32 +82,29 @@
     <a href="index.html">Главная</a>
     <a href="in1.html">Первый семестр</a>
     <a href="in2.html">Второй семестр</a>
-    <a href="index2.html">Услуги</a> 
-    <a href="index3.html">Авторизация</a> 
+    <a href="index2.html">Услуги</a>
+    <a href="index3.html">Авторизация</a>
 </nav>
-
-
-</header>
 
 <div class="container">
     <aside class="sidebar">
         <h3>Навигация по странице</h3>
         <ul>
-            <li>Фронтенд</li>
-            <li>Бэкенд</li>
+            <li><a href="#frontend">Фронтенд</a></li>
+            <li><a href="#backend">Бэкенд</a></li>
         </ul>
     </aside>
 
     <main class="main-content">
-        <h1>Разработка веб-приложений</h1>
+        <h1 id="frontend">Разработка веб-приложений</h1>
         <div class="services">
             <div class="service-box">Сайт-визитка</div>
             <div class="service-box">Корпоративный сайт</div>
             <div class="service-box">Интернет-магазин</div>
         </div>
         <p>
-            Здесь будет информация о предоставляемых услугах и их особенностях. 
-            Вы можете добавить текст, описывающий каждую из услуг, а также 
+            Здесь будет информация о предоставляемых услугах и их особенностях.
+            Вы можете добавить текст, описывающий каждую из услуг, а также
             другую важную информацию.
         </p>
     </main>
